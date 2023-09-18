@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package_laian"
+version = "0.0.1"
+authors = [
+    {name = "laian", email = "tanlaian2004@gmail.com"},
+]
+description = "A test package for ex09 in 42KL's Python Piscine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+[project.urls]
+"Homepage" = "https://github.com/LaiAnTan"
