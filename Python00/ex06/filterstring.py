@@ -8,8 +8,12 @@ def main():
     and then prints out the list of strings whose lengths are larger than the
     numbr passed in as argument.
     """
-    assert (len(sys.argv) == 3 and
+    try:
+        assert (len(sys.argv) == 3 and
             sys.argv[2].isdigit()), "the arguments are bad"
+    except AssertionError as err:
+        print("AssertionError: " + err.args[0])
+        return
 
     print([item for item in ft_filter(lambda x: len(x) > int(sys.argv[2]),
                                       sys.argv[1].split(" "))])

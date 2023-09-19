@@ -11,7 +11,7 @@ authors = [
 description = "A test package for ex09 in 42KL's Python Piscine."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
+license = "MIT"
 
 [project.urls]
 "Homepage" = "https://github.com/LaiAnTan"

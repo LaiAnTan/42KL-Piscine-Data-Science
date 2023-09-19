@@ -6,7 +6,11 @@ def main():
     Program that prints out the numbers of types of characters in a string
     provided as input.
     """
-    assert len(sys.argv) < 3, "more than one argument is provided"
+    try:
+        assert len(sys.argv) < 3, "the arguments are bad"
+    except AssertionError as err:
+        print("AssertionError: " + err.args[0])
+        return
 
     if len(sys.argv) == 1:
         print("What is the text to count?")

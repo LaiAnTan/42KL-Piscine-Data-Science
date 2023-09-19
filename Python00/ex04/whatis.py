@@ -3,9 +3,15 @@ import sys as sys
 
 def main():
 
-    assert len(sys.argv) == 2, "more than one argument is provided"
+    if len(sys.argv) < 2:
+        return
 
-    assert isinstance(sys.argv[1], int) is False, "argument is not an integer"
+    try:
+        assert len(sys.argv) == 2, "more than one argument is provided"
+        assert sys.argv[1].isdigit() is True, "argument is not an integer"
+    except AssertionError as err:
+        print("AssertionError: " + err.args[0])
+        return
 
     print("Im Even!" if abs(int(sys.argv[1]) % 2 == 0) else "Im Odd!")
 
