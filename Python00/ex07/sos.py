@@ -47,8 +47,8 @@ def main():
 
     try:
         assert (len(sys.argv) == 2 and
-                all(char.isalnum() or char == ' ' for char in sys.argv[1]) is True
-                ), "the arguments are bad"
+                all(char.isalnum() or char == ' ' for char in sys.argv[1])
+                is True), "the arguments are bad"
     except AssertionError as err:
         print("AssertionError: " + err.args[0])
         return

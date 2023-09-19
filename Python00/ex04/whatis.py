@@ -1,6 +1,14 @@
 import sys as sys
 
 
+def isNumber(s: str) -> str:
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+
 def main():
 
     if len(sys.argv) < 2:
@@ -8,7 +16,7 @@ def main():
 
     try:
         assert len(sys.argv) == 2, "more than one argument is provided"
-        assert sys.argv[1].isdigit() is True, "argument is not an integer"
+        assert isNumber(sys.argv[1]), "argument is not an integer"
     except AssertionError as err:
         print("AssertionError: " + err.args[0])
         return

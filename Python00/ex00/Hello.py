@@ -14,7 +14,6 @@ ft_tuple = tuple(temp)
 # set is unordered
 ft_set.discard("tutu!")
 ft_set.add("Kuala Lumpur!")
-ft_set = sorted(ft_set)
 
 # dict
 ft_dict["Hello"] = "42KL!"

@@ -10,7 +10,7 @@ def main():
     """
     try:
         assert (len(sys.argv) == 3 and
-            sys.argv[2].isdigit()), "the arguments are bad"
+                sys.argv[2].isdigit()), "the arguments are bad"
     except AssertionError as err:
         print("AssertionError: " + err.args[0])
         return
