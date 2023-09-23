@@ -25,8 +25,7 @@ def ft_load(path: str) -> np.ndarray[(Any, Any, 3), np.int_]:
 
     shape = (size[0], size[1], 3)
 
-    # flatten everything and then reshape
-    np_pixel_data = np.array(list(Image.Image.getdata(img))).flatten().reshape(shape)
+    np_pixel_data = np.array(img)
 
     print(f"The shape of the image is : {shape}")
     
