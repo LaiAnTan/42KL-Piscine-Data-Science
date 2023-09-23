@@ -1,6 +1,6 @@
 import numpy as np
-from math import ceil
 from typing import Any
+
 
 def ft_invert(array: np.ndarray[(Any, Any, 3), np.int_]) \
         -> np.ndarray[(Any, Any, 3), np.int_]:
@@ -14,6 +14,7 @@ def ft_invert(array: np.ndarray[(Any, Any, 3), np.int_]) \
     nd_invert = 255 - array.copy()
     return nd_invert
 
+
 def ft_red(array: np.ndarray[(Any, Any, 3), np.int_]) \
         -> np.ndarray[(Any, Any, 3), np.int_]:
     """
@@ -24,8 +25,9 @@ def ft_red(array: np.ndarray[(Any, Any, 3), np.int_]) \
     tinting red
     """
     nd_red = array.copy()
-    nd_red[:,:,1:3] = 0
+    nd_red[:, :, 1:3] = 0
     return nd_red
+
 
 def ft_green(array: np.ndarray[(Any, Any, 3), np.int_]) \
         -> np.ndarray[(Any, Any, 3), np.int_]:
@@ -37,8 +39,9 @@ def ft_green(array: np.ndarray[(Any, Any, 3), np.int_]) \
     tinting green
     """
     nd_green = array.copy()
-    nd_green[:,:,0:3:2] = 0
+    nd_green[:, :, 0:3:2] = 0
     return nd_green
+
 
 def ft_blue(array: np.ndarray[(Any, Any, 3), np.int_]) \
         -> np.ndarray[(Any, Any, 3), np.int_]:
@@ -50,8 +53,9 @@ def ft_blue(array: np.ndarray[(Any, Any, 3), np.int_]) \
     tinting green
     """
     nd_blue = array.copy()
-    nd_blue[:,:,0:2] = 0
+    nd_blue[:, :, 0:2] = 0
     return nd_blue
+
 
 def ft_grey(array: np.ndarray[(Any, Any, 3), np.int_]) \
         -> np.ndarray[(Any, Any, 3), np.int_]:
@@ -63,7 +67,7 @@ def ft_grey(array: np.ndarray[(Any, Any, 3), np.int_]) \
     conversion to grayscale
     """
     nd_grey = array.copy()
-    nd_grey[:,:,:] = np.mean(nd_grey, axis=2, keepdims=True)
+    nd_grey[:, :, :] = np.mean(nd_grey, axis=2, keepdims=True)
 
     nd_grey = nd_grey.astype(int)
     return nd_grey

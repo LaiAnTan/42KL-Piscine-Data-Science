@@ -6,7 +6,7 @@ def give_bmi(height: list[int | float],
     """
     Function that computes a list of bmi values based on lists of heights and
     weights.
-    
+
     @param height: list of heights
     @param weight: list of weights
     @return np_bmi.tolist(): list of bmis

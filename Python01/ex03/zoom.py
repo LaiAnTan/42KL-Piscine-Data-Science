@@ -1,6 +1,5 @@
 from load_image import ft_load
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def main():
@@ -12,7 +11,7 @@ def main():
     except AssertionError as err:
         print(f"AssertionError: {err.args[0]}")
         return
-    
+
     print(np_image_data)
 
     np_zoomed = np_image_data[100:500, 450:850, 0:1]

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def slice_me(family: list, start: int, end: int) -> list:
     """
     Function that prints the shape of a 2d array, and then truncates it
@@ -10,10 +11,14 @@ def slice_me(family: list, start: int, end: int) -> list:
     @param end: end of slice
     @return list(np_sliced): the sliced list
     """
-    assert isinstance(family, list) and all([isinstance(elem, list) for elem in family]), "family parameter must be a 2d list"
-    assert len(family) == [len(elem) for elem in family].count(len(family[0])), "inner lists not same size"
+    assert (isinstance(family, list) and
+            all([isinstance(elem, list) for elem in family])), "family \
+parameter must be a 2d list"
 
-    
+    assert (len(family) ==
+            [len(elem) for elem in family].count(len(family[0]))), "inner \
+lists not same size"
+
     np_family = np.array(family)
     # numpy slicing
     np_sliced = np_family[start:end]
