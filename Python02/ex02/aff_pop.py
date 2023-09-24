@@ -31,6 +31,10 @@ def handleData(df: pd.DataFrame, country: str, range: tuple[int, int]) \
 
 
 def main():
+    """
+    Program that plots a double line graph on years vs life expectancy
+    for Malaysia and France, based on the data in the csv.
+    """
 
     # data frames
     df = load("../population_total.csv")

@@ -4,6 +4,10 @@ from load_csv import load
 
 
 def main():
+    """
+    Program that plots a single line graph on years vs life expectancy
+    for Malaysia, based on the data in the csv.
+    """
 
     # data frames
     df = load("../life_expectancy_years.csv")

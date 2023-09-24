@@ -28,6 +28,10 @@ def handleData(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def main():
+    """
+    Program that plots a scatter graph on Gross Domestic Product vs
+    life expectancy of each country based on the data in the csvs'.
+    """
 
     # data frames
     gdp_df = load("../income_per_person_gdppercapita_ppp_inflation_adjusted\
