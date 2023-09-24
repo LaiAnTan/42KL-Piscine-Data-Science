@@ -1,7 +1,7 @@
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from load_csv import load
+
 
 def main():
 
@@ -20,7 +20,7 @@ def main():
 
     # new subplot object
     ax = fig.add_subplot(111)
-    l1 = ax.plot(x_axis_vals, y_axis_vals, 'y-')
+    ax.plot(x_axis_vals, y_axis_vals, 'y-')
 
     ax.set_title("Malaysia life expectancy Projections")
     ax.set_xlabel('Year')
