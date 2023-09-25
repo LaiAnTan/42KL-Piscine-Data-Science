@@ -31,10 +31,10 @@ Python03
 - Inheritance
 - Magic Methods
 - Getters, Setters
-- Decorators (@classmethod, @staticmethod, @abstractmethod)
+- Class Decorators (@classmethod, @staticmethod, @abstractmethod)
 
 Python04
 - *args, **kwargs
 - nonlocal
-- Wrappers
+- Function Wrappers
 - Dataclasses

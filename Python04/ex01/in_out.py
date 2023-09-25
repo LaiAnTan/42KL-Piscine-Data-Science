@@ -19,12 +19,12 @@ def outer(x: int | float, function) -> object:
     def inner() -> float:
         """
         Inner function
-        
+
         @return res: result when function(save) is called count times.
         """
-        nonlocal count # to change outer variables nonlocal is required
+        nonlocal count  # to change outer variables nonlocal is required
         count += 1
-        res = x # get original value
+        res = x  # get original value
         for _ in range(count):
             res = function(res)
         return res
