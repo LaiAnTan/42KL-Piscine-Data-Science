@@ -17,9 +17,9 @@ def ft_load(path: str) -> np.ndarray[(Any, Any, 3), np.int_]:
 
     try:
         img = Image.open(path)
-        img.verify() # check for corruptions
+        img.verify()  # check for corruptions
         img = Image.open(path)
-    except Exception as err:
+    except Exception:
         raise AssertionError("bad file")
 
     assert img.format in ["JPG", "JPEG"], "image format not supported"
