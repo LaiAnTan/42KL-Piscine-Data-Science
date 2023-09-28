@@ -8,11 +8,12 @@ def load(path: str) -> pd.DataFrame:
     @return df: pandas DataFrame containing data from the csv.
     @raise Exception: file not found
     """
+
     try:
         assert path.split(".")[-1] == 'csv'
         df = pd.read_csv(path)
     except Exception:
-        raise AssertionError("Error: Bad File")
+        raise AssertionError("Bad file")
 
     print(f"Loading DataFrame of size {df.shape}")
     return df

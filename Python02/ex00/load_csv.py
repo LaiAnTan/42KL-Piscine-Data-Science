@@ -13,7 +13,7 @@ def load(path: str) -> pd.DataFrame:
         assert path.split(".")[-1] == 'csv'
         df = pd.read_csv(path)
     except Exception:
-        raise AssertionError("Error: Bad File")
+        raise AssertionError("Bad file")
 
     print(f"Loading DataFrame of size {df.shape}")
     return df
