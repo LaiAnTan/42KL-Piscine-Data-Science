@@ -1,6 +1,16 @@
 # 42KL-Piscine-Python
 
-## Topics:
+## Score
+
+|Projects|Status            |Score   |
+|--------|------------------|--------|
+|Python00|:white_check_mark:|100     |
+|Python01|:white_check_mark:|100     |
+|Python02|:white_check_mark:|100     |
+|Python03|:white_check_mark:|100     |
+|Python04|:white_check_mark:|100     |
+
+## Topics
 
 Python00
 - Lists, Tuples, Sets, Dicts
