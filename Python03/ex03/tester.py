@@ -9,3 +9,8 @@ print("---")
 v3 = calculator([10.0, 15.0, 20.0])
 v3 - 5
 v3 / 5
+
+try:
+    v3 / 0
+except AssertionError as e:
+    print(e.args[0])

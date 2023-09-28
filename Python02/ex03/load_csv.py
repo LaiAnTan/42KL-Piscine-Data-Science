@@ -17,4 +17,3 @@ def load(path: str) -> pd.DataFrame:
 
     print(f"Loading DataFrame of size {df.shape}")
     return df
-
