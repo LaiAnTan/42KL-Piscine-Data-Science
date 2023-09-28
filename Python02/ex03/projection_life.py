@@ -52,6 +52,9 @@ def main():
 
     ax.scatter(gdp, life, color='r')
 
+    # scale
+    ax.set_xscale("log")
+
     # labels
     ax.set_title("1900")
     ax.set_xlabel('Gross Domestic Product')
