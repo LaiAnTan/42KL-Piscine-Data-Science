@@ -11,7 +11,7 @@ def load(path: str) -> pd.DataFrame:
     try:
         df = pd.read_csv(path)
     except Exception:
-        print(f"Error: bad file")
+        print("Error: bad file")
         return
 
     print(f"Loading DataFrame of size {df.shape}")
